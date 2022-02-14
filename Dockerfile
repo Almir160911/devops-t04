@@ -1,25 +1,4 @@
-Existem basicamente duas formas de criar imagem Docker:
 
-1. A partir de um container em execução que você fez customizações.
-2. A partir de um arquivo chamado Dockerfile
-
-Nossa missão será criar o Dockerfile  que terá a missão de criar uma imagem de Docker customizada com a nossa aplicação Python preparada para rodar no container criado a partir dessa imagem.
-
----
-
-###1.
-Vamos acessar o nosso Visual Studio Code para fazer as alterações no repositório. Caso você prefira fazer pelo terminal fique a vontade.
-
-No Visual Studio vamos criar uma nova Branch para fazer esse processo de colocar a aplicação no Docker
-
-![](https://trello.com/1/cards/61fc6e30719a31076e5ba42e/attachments/61fc726ff5e5c20cf7a46ec0/download/image.png)
-
----
-
-###2.
-Crie um Dockerfile com o conteúdo abaixo:
-
-```
 # Use uma Imagem Official do Python
 FROM python:rc-slim
 
